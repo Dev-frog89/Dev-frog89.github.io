@@ -1,0 +1,283 @@
+body {
+    margin: 0%;
+    user-select: none;
+    -webkit-appearance: none; /* Safari */
+    -moz-appearance: textfield; /* Firefox */
+     appearance: textfield;
+     background-color: rgb(14, 18, 26);
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+select:focus {
+    outline: none;
+}
+
+input:focus {
+    outline: none;
+}
+
+
+@font-face {
+    font-family: 'NormalidadCompact-Medium';
+    src: url('fonts/NormalidadCompact-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'NormalidadCompact-Bold';
+    src: url('fonts/NormalidadCompact-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'NormalidadCompact-Regular';
+    src: url('fonts/NormalidadCompact-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'NormalidadCompact-Thin';
+    src: url('fonts/NormalidadCompact-Thin_1.ttf') format('truetype');
+}
+
+/*------------------------------- ORDENADOR ----------------------------- */
+@media (min-width: 769px) {
+
+header {
+    width: 100%;
+    padding: 35px 0 35px 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+}
+
+nav li {
+    font-size: 20px;
+    font-family: 'NormalidadCompact-Thin';
+    color: white;
+    list-style: none;
+}
+
+/*------------------------------- PROFILE ----------------------------- */
+.container-profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 7%;
+    margin-top: 5%;
+}
+
+.image-self img {
+    height: 350px;  
+    border-radius: 10px;
+    margin-left: 35%;
+}
+
+.content-profile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -5%;
+}
+
+.content-profile h1 {
+    font-size: 70px;
+    font-family: 'NormalidadCompact-Bold';
+    color:  white;
+}
+
+.content-profile h2 {
+    font-size: 44px;
+    font-family: 'NormalidadCompact-Thin';
+    color:  white;
+    margin-top: -7%;
+}
+
+.content-profile p {
+    font-size: 18px;
+    font-family: 'NormalidadCompact-Thin';
+    color:  white;
+    margin: auto 0;
+    width: 65%;
+    text-align: justify;
+}
+
+/*------------------------------- TECNOLOGIAS ----------------------------- */
+
+.tecnologias {
+    margin-top: 9%;
+}
+
+.container-tabs-tecnologias {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.2px solid rgba(255, 255, 255, 0.324);
+    border-radius: 50px;
+    width: 70%;
+    height: 40px;
+    margin-left: 15%;
+    padding-bottom: 2%;
+}
+
+.tecnologias h2 {
+    font-size: 40px;
+    font-family: 'NormalidadCompact-Bold';
+    color:  white;
+    text-align: center;
+}
+
+.tecnologias h3 {
+    font-size: 20px;
+    font-family: 'NormalidadCompact-Medium';
+    color:  white;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+.tab {
+    opacity: 0.2;
+    cursor: pointer;
+}
+
+.tab.active {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.container-iconos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.iconos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20%;
+    position: absolute;
+    opacity: 0;
+}
+
+.iconos.active {
+    opacity: 1;
+}
+
+.iconos img {
+    height: 70px;
+}
+
+/*------------------------------- PROYECTOS ----------------------------- */
+
+.proyectos-div {
+    position: absolute;
+    display: none;
+}
+
+.proyectos-div.active {
+    display: block;
+}
+
+
+.proyectos h2 {
+    font-size: 40px;
+    font-family: 'NormalidadCompact-Bold';
+    color:  white;
+    text-align: center;
+    margin-top: 10%;
+}
+
+.container-tabs-proyectos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.2px solid rgba(255, 255, 255, 0.324);
+    border-radius: 50px;
+    width: 70%;
+    height: 40px;
+    margin-left: 15%;
+    padding-bottom: 2%;
+}
+
+.tab2 {
+    opacity: 0.2;
+    cursor: pointer;
+}
+
+.tab2.active {
+    opacity: 1;
+    cursor: pointer;
+}
+
+
+
+.proyectos h3 {
+    font-size: 20px;
+    font-family: 'NormalidadCompact-Thin';
+    color:  white;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+.display-proyectos {
+    display: flex;
+
+}
+
+.proyectos-todos-container {
+    border: 1px solid white;
+    width: 40%;
+    padding-right: 7%;
+    border-radius: 10px;
+    margin-left: 15%;
+    margin-top: 5%;
+}
+
+.vermas-container {
+    display: flex;
+    padding: 10px 10px;
+    margin-top: 2%;
+    gap: 10%;
+}
+
+.vermas-content {
+    display: flex;
+    flex-direction: column;
+    align-items: first baseline;
+}
+
+.vermas-content h2 {
+    font-size: 23px;
+}
+
+.vermas-content h3 {
+    font-size: 18px;
+    margin-top: -5%;
+}
+
+.vermas-image img {
+    height: 220px;
+    margin-left: 20%;
+}
+
+button {
+    font-size: 18px;
+    color: white;
+    background-color: #52BDFF;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px 10px 20px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+
+}
